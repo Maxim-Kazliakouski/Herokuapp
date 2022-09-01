@@ -1,4 +1,3 @@
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -9,7 +8,7 @@ import static org.testng.Assert.assertEquals;
 public class ContextMenuTest extends BaseTest {
     String CONTEXT_MENU_URL = "https://the-internet.herokuapp.com/context_menu";
 
-    @Test
+    @Test(description = "check the text in the context menu, the text should be --> 'You selected a context menu'")
     public void contextMenu() {
         String testAlertMessage = "You selected a context menu";
         browser.get(CONTEXT_MENU_URL);
